@@ -1,0 +1,139 @@
+body {
+    font-family: Roboto,sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1A1A1D;
+}
+
+main h2{
+    color: white;
+}
+
+header {
+    background-image: url('/trabajo/img/header.png');
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    /*position: fixed;*/
+    width: 100%;
+    bottom: 0;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.carta {
+    color: white;
+    background-color: #1A1A19;
+    border: 2px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    width: 25%;
+}
+
+.carta img {
+    max-width: 100%;
+    margin-left: 25%;
+}
+
+.grid-lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.lista {
+    background-color: #C5D3E8;
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+ul1 {
+float: left;
+}
+
+ul2 {
+float: right;   
+}
+
+li1 {
+float: right;    
+}
+
+#contacto {
+    padding: 20px;
+    background: linear-gradient(to right, #1c069c, #06023f);
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .grid-reviews {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
